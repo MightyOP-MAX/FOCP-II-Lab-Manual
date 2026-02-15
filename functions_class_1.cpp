@@ -44,6 +44,7 @@ int main(){
 
 
 /* forward declaration*/
+
 /*#include <iostream>
 using namespace std;
 int add(int a,int b);  // function declaration
@@ -97,7 +98,7 @@ double add(double d1, double d2){
     
 }*/
 
-/*
+
 #include<iostream>
 using namespace std;
 void welcome(string="user");
@@ -108,4 +109,4 @@ int main()
     return 0;
 }
 void welcome(string name)
-{cout<<"\n welcome"<<name;}*/
+{cout<<"\n welcome"<<name;}
