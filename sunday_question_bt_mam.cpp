@@ -28,8 +28,13 @@ if(max<marks[i])
 {max=marks[i];}
 }
 
+min=marks[0];
+for(int i=1; i<10;i++){
+if(min>marks[i])
+{min=marks[i];}
+}
 cout<<"total is "<<tot<<"\n"<<"average is "<<avg;
-cout<<"\nmax marks are "<<max;
+cout<<"\nmax marks are "<<max<<"\nmin marks are "<<min<<"\n";
 }
 
 
