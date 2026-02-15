@@ -24,9 +24,7 @@ avg=tot/10; //for average
 
 max=marks[0];
 for(int i=1; i<10;i++){
-if(marks[i]>marks[i-1])
-{max=marks[i];}
-else
+if(max<marks[i])
 {max=marks[i];}
 }
 
