@@ -98,7 +98,7 @@ double add(double d1, double d2){
     
 }*/
 
-
+/*
 #include<iostream>
 using namespace std;
 void welcome(string="user");
@@ -110,3 +110,4 @@ int main()
 }
 void welcome(string name)
 {cout<<"\n welcome"<<name;}
+*/

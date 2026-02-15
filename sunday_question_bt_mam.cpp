@@ -5,40 +5,35 @@ using namespace std;
 void computePerformance(int marks[]);
 
 int main(){
-int marks[10];
+int score[10];
 
 for(int i=0; i<10;i++){
-cin>>marks[i];}
-computePerformance( marks);
+cin>>score[i];}
+computePerformance( score);
 return 0;
 }
 
 void computePerformance(int marks[]){
-int avg,min,max,tot=0;
+int min,max,tot=0;
+float avg;
 
 for(int i=0; i<10;i++){ // for totaling
 tot=marks[i]+tot;
 }
 
-avg=tot/10; //for average
+avg=tot/10.0; //for average
 
 max=marks[0];
-for(int i=1; i<10;i++){
+for(int i=1; i<10;i++){ //for max
 if(max<marks[i])
 {max=marks[i];}
 }
 
 min=marks[0];
-for(int i=1; i<10;i++){
+for(int i=1; i<10;i++){//for min
 if(min>marks[i])
 {min=marks[i];}
 }
 cout<<"total is "<<tot<<"\n"<<"average is "<<avg;
 cout<<"\nmax marks are "<<max<<"\nmin marks are "<<min<<"\n";
 }
-
-
-
-
-
-
