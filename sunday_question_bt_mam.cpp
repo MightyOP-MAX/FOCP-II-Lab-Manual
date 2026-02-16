@@ -2,38 +2,43 @@
 delegates the computation of average, minimum, and maximum scores to a separate method computePerformance() */
 #include<iostream>
 using namespace std;
-void computePerformance(int marks[]);
+void computePerformance(int marks[], int n);
 
 int main(){
-int score[10];
+    int n;
+    cout<<"enter no. od students";
+cin>>n;
+int score[n];
 
-for(int i=0; i<10;i++){
+
+cout<<"enter marks of students";
+for(int i=0; i<n;i++){
 cin>>score[i];}
-computePerformance( score);
+computePerformance(score,n);
 return 0;
 }
 
-void computePerformance(int marks[]){
-int min,max,tot=0;
-float avg;
+void computePerformance(int marks[], int n){
+int min,max;
+float avg,tot=0;
 
-for(int i=0; i<10;i++){ // for totaling
+for(int i=0; i<n;i++){ // for totaling
 tot=marks[i]+tot;
 }
 
-avg=tot/10.0; //for average
-
-max=marks[0];
-for(int i=1; i<10;i++){ //for max
-if(max<marks[i])
-{max=marks[i];}
-}
+avg=tot/n; //for average
 
 min=marks[0];
-for(int i=1; i<10;i++){//for min
-if(min>marks[i])
+max=marks[0];
+for(int i=1; i<n;i++){ //for max
+
+if(max<marks[i])
+{max=marks[i];}
+
+if(min>marks[i])//fro min
 {min=marks[i];}
 }
+
 cout<<"total is "<<tot<<"\n"<<"average is "<<avg;
 cout<<"\nmax marks are "<<max<<"\nmin marks are "<<min<<"\n";
 }
