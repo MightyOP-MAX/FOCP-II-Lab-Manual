@@ -18,8 +18,14 @@ int main() {
             if(arr[i] == arr[j])
                 count++;
         }
+     for(int a = 0; a < i; a++) {
+            if(arr[i] == arr[a]){
+                goto end;}
+            }
+
 
         cout << arr[i] << " occurs " << count << " times\n";
+        end:;
     }
 
     return 0;
