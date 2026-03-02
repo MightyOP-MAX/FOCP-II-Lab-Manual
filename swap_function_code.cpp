@@ -19,6 +19,7 @@ int main()
      cout<< "enter y=";
     cin>>y;
 cout<<"Before Swap\n";
+
     Swap (a, b);  
     Swap (x, y); 
 
