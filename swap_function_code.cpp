@@ -6,25 +6,25 @@ void Swap (float &x, float &y);
 
 int main()
 {int a,b;
-    cout<< "enter a";
+    cout<< "enter a=";
     cin>>a;
 
-    cout<<"enter b";
+    cout<<"enter b=";
     cin>>a;
 
     float x,y;
-     cout<< "enter x";
+     cout<< "enter x=";
     cin>>x;
 
-     cout<< "enter y";
+     cout<< "enter y=";
     cin>>y;
-
+cout<<"Before Swap\n";
     Swap (a, b);  
     Swap (x, y); 
 
     cout<<"After Swap\n";
     cout<< a <<" "<< b << "\n";   
-    cout<< "enter x"<<x << " enter y"<< y << endl; 
+    cout<< x << " "<< y << endl; 
     return 0;
 }
 
